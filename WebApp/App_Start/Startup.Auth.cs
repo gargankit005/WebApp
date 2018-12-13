@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
+using System.Configuration;
 using Owin;
 using WebApp.Models;
 
@@ -54,9 +55,9 @@ namespace WebApp
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+           app.UseFacebookAuthentication(
+           appId: "264082394269368",
+           appSecret: "●●●●●●●●");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
